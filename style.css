@@ -13,7 +13,6 @@ body{
   width: 100%;
   background-color: #fff;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   position: fixed;
   margin-top: 0;
@@ -27,11 +26,13 @@ body{
 }
 .navigation > ul{
   display: flex;
-  margin-right: 50px;
+  margin-right: 60px;
+  margin-left: 80px;
 }
 .navigation > ul > li {
   list-style: none; 
-  margin: 0 15px;
+  margin: 0 10px;
+  margin-left: 20px;
   padding: 38px 0;
   
 }
@@ -41,10 +42,6 @@ body{
   font-weight: 500;
   color: #53595e
 }
-.navigation  ul  li  a:hover, .navigation  ul  li  a.active{
-  color: #E20101;
-  
-} 
 .navigation > ul > li:hover > a{
   color: #E20101;
   border-bottom: 2px solid #E20101;
@@ -64,7 +61,7 @@ body{
 .btn-contact{
   padding: 16px 40px;
   margin-right: 150px;
-  margin-left: -100px;
+  margin-left: -50px;
   letter-spacing: 1PX;
   border: 2px solid black;
   font-size: 16px;
@@ -73,20 +70,21 @@ body{
 }
 .btn-contact:hover{
   background-color: #E20101;
+  cursor: pointer;
+  color: white;
   border: none;
-  
-  
 }
 /* -------Dropdown part----------*/
 
 .dropdown{
   opacity: 0;
   visibility: hidden;
-  background-color: #fff;
-  width: 230px;
+  background-color:#FFFFFF;
+  width: 250px;
+  height: 100px;
   position: absolute;
   margin-top: 0px;
-  margin-left: -160px;
+  margin-left: -204px;
   transition: 0s;
   border: 1px solid black;
   transform: scaleY(0);
@@ -95,17 +93,19 @@ body{
 }
 .dropdown > li{
   list-style: none;
-  padding: 10px 10px;
+  padding: 10px 12px;
+  color: #E20101;
+  
 }
 .dropdown > li > a{
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  color: white;
+  color: black;
 }
 .dropdown > li:hover {
   background-color: white;
-  cursor: pointer;
+  cursor: pointer; 
 }
 .navigation > ul > li:hover > .dropdown{
   opacity: 1;
@@ -115,9 +115,7 @@ body{
 }
 .dropdown > li:hover > a{
   color: #E20101;
-  transform-origin: top;
-  transition: 1.5s;
-
+  
 }
 
 /* hero area code */
@@ -130,9 +128,9 @@ body{
   background-attachment: fixed;
 }
 .hero-container{
-  margin-left: 190px;
+  margin-left: 170px;
   line-height: 60px;
-  padding-top: 260px;
+  padding-top: 270px;
   
 }
 .hero-area h1{
@@ -231,7 +229,7 @@ body{
   height: 410px;
   margin: auto;
   margin-bottom: 20px;
-  gap: 20px;
+  gap: 19px;
 }
 .second-container-img{
   width: 320px;
@@ -253,29 +251,27 @@ body{
 
 .card-shadow{
   
+    transition: transform 0.2s;
     box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
     top: -4px;
-    border: 1px solid #cccccc;
-    background-color: white;
+   
 }
 .card-shadow:hover{
   transform: scale(1.05);
-  transition: transform 0.3s;
   cursor: pointer;
-}
-.card-shadow h3:hover{
   color: #E20101;
 }
 
 
-/* section-3 code */
+
+/* section-3  contact and map area code */
  .section-area3{
   display: flex;
   width: 1000px;
 }
 .field-container{
   width: 450px;
-  margin-left: 150px;
+  margin-left: 170px;
 }
 
 .field-container h4{
@@ -285,10 +281,11 @@ body{
   margin-left: 20px;
 }
 .field-container h1{
+  margin-left: 20px;
   font-size: 32px;
   font-weight: 600;
   color: #222120;
-  margin-left: 20px;
+  
 }
 
 input[type=text], textarea {
@@ -300,11 +297,11 @@ input[type=text], textarea {
   margin-bottom: 16px;
   resize: vertical;
   -webkit-transition: 0.1s; 
-   transition: 0.1s;
+   transition: 0.05s;
   outline: none; 
  } 
  input[type=text]:focus {
-  box-shadow: 0 0 0 1px rgb(192, 191, 191);
+  box-shadow: 0 0 0 1px rgb(243, 200, 200);
   border: double;
 
 }
@@ -338,7 +335,7 @@ input[type=submit]:hover {
 }
 
 .container {
-  background-color: #f2f2f2;
+  background-color: white;
   padding: 20px;
 }
 .contact_map > p >a{
@@ -351,9 +348,11 @@ input[type=submit]:hover {
 }
 
 .contact_map{
-  width: 400px;
-  height: 520px;
+  width: 450px;
+  height: 650px;
   margin-left: 100px;
+  background-color: #F5F5F5;
+  padding: 40px;
 }
 .contact_map >h4{
 color: #2e2e2e;
@@ -361,7 +360,6 @@ margin-top: 10px;
 }
 .weaken-time{
   display: flex;
-  margin-top: 20px;
   gap: 30px;
   font-size: 18px;
   font-weight: 400;
@@ -374,8 +372,7 @@ margin-top: 10px;
   height: 200px;
   width: 100%;
   display: flex;
-  border: 2px solid blueviolet;
-  margin-top: 150px;
+  margin-top: 100px;
 
 }
 #footer-area{
